@@ -6,9 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EcommerceApplication {
 
-
     /*
-
     User Management
     Register/Delete User
     Login flow - Authorization and Authentication
@@ -18,10 +16,7 @@ public class EcommerceApplication {
     Update Inventory
     Make Payment
     Send Order
-
-
-
-
+    Complete Order
      */
 
 	public static void main(String[] args) {
