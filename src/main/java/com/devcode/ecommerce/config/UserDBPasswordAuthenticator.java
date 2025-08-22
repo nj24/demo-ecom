@@ -7,13 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-public class CustomAuthenticationProvider implements AuthenticationProvider {
-
-    private final UserRepository userRepository;
-
-    public CustomAuthenticationProvider(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+public record UserDBPasswordAuthenticator(UserRepository userRepository) implements AuthenticationProvider {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
